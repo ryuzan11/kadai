@@ -12,11 +12,11 @@ Rails.application.routes.draw do
     collection do
       post 'pay'
     end
-    
+
     member do
       get :check
     end
-    
+
   end
 
   post 'items/pay',to: 'items#pay'
