@@ -41,7 +41,7 @@ before_action :set_item, only: [:edit, :update, :destroy,:confirm_buy, :pay, :co
 
   def show
     @item = Item.find(params[:id])
-    @images = Image.includes(:item)
+    @images = @item.images
     @ownerItems = Item.where( "user_id = ?", @item.user_id ).limit(6)
     @brandItems = Item.where( "brand_id = ?", @item.brand_id ).limit(6)
   end
