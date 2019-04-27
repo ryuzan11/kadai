@@ -1,0 +1,4402 @@
+@charset "UTF-8";
+/*!
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+/*
+    TODO will need to remove settings on HTML since we can't namespace it.
+    TODO with the prefix, should I group by selector or property for weight savings?
+*/
+/* line 11, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+html {
+  color: #000;
+  background: #FFF;
+}
+
+/*
+    TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+    TODO test putting a class on HEAD.
+        - Fails on FF.
+*/
+/* line 22, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 50, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 54, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+    TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+/* line 61, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 74, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 79, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+caption,
+th {
+  text-align: left;
+}
+
+/* line 83, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 92, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+q:before,
+q:after {
+  content: '';
+}
+
+/* line 96, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+/* line 102, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 105, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 108, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+/* line 116, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+/* line 122, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+/* line 126, /Users/ryuzan/projects/kadai/app/assets/stylesheets/reset.scss */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+/* line 2, /Users/ryuzan/projects/kadai/app/assets/stylesheets/flash.scss */
+.notification .notice {
+  height: 45px;
+  background-color: #38AEF0;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
+/* line 10, /Users/ryuzan/projects/kadai/app/assets/stylesheets/flash.scss */
+.notification .alert {
+  height: 45px;
+  background-color: #F35500;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+/* line 4, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.mercari-logo {
+  height: 36px;
+  width: 134px;
+}
+
+/* line 9, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header {
+  height: 90px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+/* line 14, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__inner {
+  height: 90px;
+  width: 80%;
+  padding-top: 10px;
+  margin: 0 auto;
+  background-color: white;
+}
+/* line 20, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__inner--top {
+  height: 35px;
+  width: 100%;
+  background-color: white;
+}
+/* line 24, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__inner--top--bottom {
+  height: 50%;
+  width: 100%;
+}
+/* line 30, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__form {
+  width: calc(100% - (134px + 16px));
+  position: relative;
+}
+
+/* line 36, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.mercari-logo {
+  height: 36px;
+  width: 134px;
+  vertical-align: middle;
+}
+
+/* line 42, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.input {
+  height: 36px;
+  width: 100%;
+  padding: 9px 32px 9px 8px;
+  background-color: #fafafa;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* line 53, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.fa-search {
+  height: 36px;
+  width: 36px;
+  font-size: 13px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* line 63, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.fa-search:before {
+  line-height: 36px;
+}
+
+/* line 67, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.h-left {
+  float: left;
+}
+
+/* line 70, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.h-left ul li {
+  display: inline-block;
+}
+
+/* line 73, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.h-right {
+  float: right;
+}
+
+/* line 76, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.h-right ul li {
+  display: inline-block;
+}
+
+/* line 81, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__nav h2 {
+  margin-bottom: 0;
+}
+
+/* line 85, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__nav--root {
+  line-height: 34px;
+  margin: 0 5px 0 0;
+}
+
+/* line 89, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__nav--search a {
+  color: black;
+}
+
+/* line 92, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__nav--search a:hover {
+  color: #0099e8;
+}
+
+/* line 95, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__nav--user a {
+  line-height: 14px;
+  color: black;
+}
+
+/* line 99, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__nav--user a:hover {
+  color: #0099e8;
+}
+
+/* line 102, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__nav h2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* line 109, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__user--icon img {
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+}
+
+/* line 114, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__user--icon div {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* line 119, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__user--icon figure {
+  display: inline-block;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+/* line 127, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.pc-header__user--icon div {
+  border-radius: 50%;
+}
+
+/* line 135, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.btn_red {
+  display: block;
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+}
+
+/* line 141, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.header_btn {
+  margin: 0;
+  padding: 0 10px;
+  line-height: 30px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* line 148, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.header_login li {
+  margin: 0 0 0 8px;
+}
+
+/* line 151, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.signup_btn {
+  display: block;
+  border: 1px solid #0099e8;
+  background: #fff;
+  color: #0099e8;
+}
+
+/* line 157, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.signup_btn:hover {
+  background-color: #0099e8;
+  color: #fff;
+}
+
+/* line 161, /Users/ryuzan/projects/kadai/app/assets/stylesheets/header.scss */
+.right-m {
+  padding-top: 10px;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+body {
+  font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+  color: #333;
+}
+
+/* line 5, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+a {
+  color: #0099e8;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+
+/* line 10, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+img {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* line 15, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+/* line 27, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+/* line 35, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.pickup-container {
+  padding: 40px 0;
+  background-color: #f5f5f5;
+}
+
+/* line 39, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.pickup-container h2 {
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* line 44, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+/* line 54, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.pickup-container a {
+  color: #0099e8;
+}
+
+/* line 57, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.items-box-container {
+  width: 940px;
+  font-size: 22px;
+  margin: 0 auto;
+}
+
+/* line 62, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 65, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.items-box-content {
+  height: 330px;
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+/* line 71, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.items-box {
+  margin: 0 0 0 20px;
+  width: 213px;
+  float: left;
+  background-color: #fff;
+  display: inline-block;
+}
+/* line 77, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.items-box__photo {
+  overflow: hidden;
+  padding: 0 0 100%;
+}
+/* line 81, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.items-box__body {
+  padding: 10px;
+  height: 110px;
+}
+/* line 85, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.items-box__name {
+  overflow: hidden;
+  font-weight: 400;
+  height: 41px;
+  width: 181px;
+  line-height: 1.5;
+  word-break: break-word;
+  white-space: normal;
+}
+/* line 94, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.items-box__name h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+/* line 103, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.items-box__num {
+  height: 28.84px;
+  margin: 8px 0 0;
+}
+/* line 107, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.items-box__price {
+  font-size: 16px;
+  float: left;
+}
+/* line 111, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.items-box__likes {
+  margin: 3px 0 0 145px;
+}
+/* line 114, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.items-box__likes i {
+  margin: 0 4px 0 0;
+  vertical-align: middle;
+}
+/* line 118, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.items-box__likes span {
+  display: inline-block;
+  margin: 1px 0 0;
+  vertical-align: middle;
+}
+/* line 123, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.items-box__tax {
+  width: 100%;
+  color: black;
+  font-size: 10px;
+  float: left;
+}
+
+/* line 130, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.items-box__photo {
+  height: 213px;
+  width: 213px;
+}
+
+/* line 134, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.font2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+/* line 139, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.icon-like-border {
+  color: #ccc;
+}
+
+/* line 142, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.font5 {
+  font-weight: 600;
+  color: #333;
+}
+
+/* line 146, /Users/ryuzan/projects/kadai/app/assets/stylesheets/items.scss */
+.view-all {
+  font-size: 15px;
+  margin: 20px 0 50px;
+  width: 99%;
+  text-align: right;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.global-footer {
+  padding: 40px 20px;
+  background: #212121;
+  color: #fff;
+}
+/* line 5, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.global-footer nav ul {
+  list-style: none;
+}
+/* line 8, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.global-footer li {
+  color: #333;
+}
+/* line 11, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.global-footer a {
+  color: #fff;
+}
+
+/* line 16, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.download-app {
+  text-align: center;
+}
+/* line 18, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.download-app a {
+  display: block;
+}
+/* line 21, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.download-app img {
+  margin: 0 8px 0 0;
+}
+
+/* line 26, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.footer-cell {
+  margin: 40px auto 0;
+}
+/* line 28, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.footer-cell .footer-head {
+  color: #fff;
+  font-size: 16px;
+}
+/* line 32, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.footer-cell li:first-child {
+  margin: 24px 0 0;
+}
+/* line 35, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.footer-cell li {
+  margin: 16px 0 0;
+}
+/* line 39, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.footer-cell .footer-nav-lang a {
+  margin: 0 auto;
+}
+/* line 42, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.footer-cell .footer-nav-lang img {
+  margin: 0 8px 0 0;
+}
+/* line 45, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.footer-cell .footer-nav-lang #lang {
+  width: 22px;
+}
+/* line 49, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.footer-cell a {
+  display: block;
+}
+
+/* line 54, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.footer-logo {
+  display: block;
+  margin: 40px auto 0;
+  text-align: center;
+  width: 124px;
+  height: 33px;
+}
+
+/* line 63, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.footer-copyright {
+  margin: 8px 0 0;
+  text-align: center;
+}
+/* line 66, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+.footer-copyright small {
+  font-size: 14px;
+}
+
+/* line 75, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+a {
+  color: #0099e8;
+  text-decoration: none;
+}
+
+/* line 80, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer.scss */
+* {
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer-sell-btn.scss */
+.footer-sell-btn {
+  position: fixed;
+  bottom: -14px;
+  right: -14px;
+  z-index: 1000;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ea352d;
+  color: #fff;
+  text-align: center;
+}
+/* line 12, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer-sell-btn.scss */
+.footer-sell-btn div {
+  margin: 14px 0 0;
+}
+/* line 15, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer-sell-btn.scss */
+.footer-sell-btn .fas .fa-camera {
+  margin: 4px 0 0;
+  font-size: 24px;
+}
+
+/* line 20, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer-sell-btn.scss */
+.icon-camera:before {
+  content: '\e00a';
+}
+
+/* line 24, /Users/ryuzan/projects/kadai/app/assets/stylesheets/footer-sell-btn.scss */
+.icon-camera {
+  display: inline-block;
+  font-family: 'icon-font';
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.single-container {
+  background-color: #f5f5f5;
+}
+
+/* line 7, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.single-header {
+  height: 128px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+/* line 13, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.single-header h1 {
+  margin: 40px 0 0;
+  display: inline-block;
+}
+
+/* line 17, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.single-header a {
+  height: 49px;
+  width: 185px;
+  line-height: 49px;
+  display: inline-block;
+  margin: 0 8px 0 0;
+}
+
+/* line 24, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.single-header img {
+  height: 49px;
+  width: 185px;
+}
+
+/* line 31, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.single-main {
+  background-color: #f5f5f5;
+}
+
+/* line 34, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.login-panel {
+  max-width: none;
+  width: 456px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* line 40, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.login-panel a {
+  display: block;
+  margin: 40px 0 0;
+}
+
+/* line 44, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.login-no-account {
+  padding: 40px 64px;
+  text-align: center;
+}
+
+/* line 48, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.login-no-account p {
+  font-size: 14px;
+}
+
+/* line 51, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.login-no-account a {
+  display: block;
+  margin: 8px 0 0;
+  border: 1px solid #0099e8;
+  background: #0099e8;
+  color: #fff;
+  line-height: 40px;
+}
+
+/* line 59, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.login-form-inner {
+  padding: 32px 64px;
+  border-top: 1px solid #eee;
+}
+
+/* line 63, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.btn-sns-fb {
+  margin: 0;
+  background-color: #385185;
+  color: #fff;
+}
+
+/* line 68, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.btn-sns {
+  position: relative;
+}
+
+/* line 71, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.btn-sns i {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+/* line 78, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.fa-facebook {
+  color: #fff;
+  background: #385185;
+  font-size: 18px;
+}
+
+/* line 83, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.btn-sns-google {
+  margin: 16px 0 0;
+  background: #dc4e41;
+  color: #fff;
+}
+
+/* line 88, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.btn-default {
+  display: block;
+  width: 100%;
+  line-height: 48px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 97, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.btn-default a {
+  color: black;
+}
+
+/* line 101, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.login-form-inner .input-default {
+  margin: 0;
+}
+
+/* line 104, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.form-group {
+  padding-bottom: 20px;
+}
+
+/* line 107, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.form-group .input-default {
+  width: 90%;
+}
+
+/* line 110, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.input-default {
+  height: 48px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  line-height: 1.5;
+  padding: 0 16px 0;
+  font-size: 14px;
+}
+
+/* line 120, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.rc-anchor {
+  height: 74px;
+  width: 300px;
+  border: 1px solid #d3d3d3;
+  background: #f9f9f9;
+  color: #000;
+}
+
+/* line 127, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.login-submit {
+  margin: 24px 0 0;
+}
+
+/* line 130, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.btn-red {
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+}
+
+/* line 146, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.signup-container {
+  width: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* line 151, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.signup-head {
+  padding: 32px 16px;
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* line 157, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.signup-inner {
+  padding: 64px;
+  border-top: 1px solid #f5f5f5;
+}
+
+/* line 161, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.signup-content {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* line 165, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.btn-mail {
+  position: relative;
+  background: #eee;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+/* line 171, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.btn-mail .fa-envelope {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translate(0, -50%);
+  color: #ccc;
+  font-size: 20px;
+}
+
+/* line 189, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.single-footer {
+  width: 456px;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+/* line 196, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.single-footer li {
+  font-size: 12px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* line 201, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.single-footer a {
+  color: black;
+}
+
+/* line 204, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.single-footer small {
+  font-size: 10px;
+}
+
+/* line 207, /Users/ryuzan/projects/kadai/app/assets/stylesheets/login_signup.scss */
+.single-footer-logo img {
+  width: 80px;
+  height: 65px;
+  margin: 40px auto 0;
+}
+
+/* line 3, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* line 6, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 9, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+body {
+  background-color: #eeeeee;
+}
+
+/* line 12, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+table {
+  display: table;
+  width: 100%;
+  height: 375px;
+  border-collapse: collapse;
+  border: 1px solid #f3f3f3;
+  font-size: 14px;
+}
+
+/* line 20, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+table a {
+  color: #00bfff;
+}
+
+/* line 23, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+th {
+  display: table-cell;
+  width: 39%;
+  text-align: left;
+  background-color: #f7f7f7;
+  border: 1px solid #f3f3f3;
+  padding: 8px;
+}
+
+/* line 31, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+th.seller {
+  height: 65px;
+}
+
+/* line 34, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+th.categoly {
+  height: 69px;
+}
+
+/* line 37, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-user-ratings {
+  float: left;
+  padding: 5px 10px 0 0;
+}
+
+/* line 41, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+td {
+  display: table-cell;
+  width: 69%;
+  border: 1px solid #f3f3f3;
+  padding: 8px;
+}
+
+/* line 47, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-nav {
+  display: block;
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  margin: 0;
+}
+
+/* line 54, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-nav_box {
+  list-style: none;
+  padding: 16px 80px;
+  margin: 0;
+}
+
+/* line 59, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-nav_box_text {
+  padding: 5px;
+  float: left;
+}
+
+/* line 63, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items {
+  padding: 40px 0;
+  background-color: #eeeeee;
+}
+
+/* line 67, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail {
+  box-sizing: border-box;
+  /*  height: 700px;*/
+  width: 700px;
+  margin: 0 auto;
+  padding: 24px 40px 40px;
+  background-color: #ffffff;
+}
+
+/* line 75, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail_item-name {
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+
+/* line 82, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail_item-subtext {
+  font-size: 14px;
+  color: #888;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+/* line 88, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail_item-container {
+  height: 375px;
+  width: 620px;
+}
+
+/* line 92, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail_item-container_photo-box {
+  position: relative;
+  height: 375px;
+  width: 300px;
+  float: left;
+  background-color: black;
+}
+
+/* line 99, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail_item-container_item-table {
+  height: 375px;
+  width: 300px;
+  float: right;
+}
+
+/* line 104, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail_pricebox {
+  height: 50px;
+  background-color: #fff;
+  margin: 20px auto 0;
+}
+
+/* line 109, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail_pricebox-container {
+  text-align: center;
+  margin: 24px auto;
+}
+
+/* line 113, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail_pricebox_price {
+  display: inline-block;
+  font-size: 50px;
+}
+
+/* line 117, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail_pricebox_tax {
+  display: inline-block;
+  font-size: 10px;
+}
+
+/* line 121, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail_pricebox_delivary {
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* line 125, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail_button-for-buy {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 32px;
+  background-color: #ea352d;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* line 136, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail_main-text {
+  line-height: 1.5;
+  padding-top: 32px;
+}
+
+/* line 140, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail__lastButton-container {
+  margin: 30px 0 0;
+  font-size: 12px;
+}
+
+/* line 144, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail__lastButton-container__left {
+  float: left;
+}
+
+/* line 147, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail__lastButton-container__left__button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  border-radius: 17px;
+  border: 1px solid #f3f3f3;
+  background-color: #f7f7f7;
+}
+
+/* line 154, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.items_item-detail__lastButton-container__right {
+  float: right;
+  color: #00bfff;
+}
+
+/* line 158, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-comment {
+  box-sizing: border-box;
+  width: 700px;
+  margin: 8px auto;
+  background-color: white;
+}
+
+/* line 164, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-comment__wrapper {
+  padding: 35px 24px 0 24px;
+}
+
+/* line 167, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-comment__wrapper__comments {
+  list-style-type: none;
+}
+
+/* line 171, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-comment__wrapper__comments__comment {
+  margin-top: 20px;
+}
+
+/* line 174, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-comment__wrapper__comments__comment__img {
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 0 15px;
+  position: relative;
+  top: -20px;
+  background-color: gold;
+  border-radius: 20px;
+}
+
+/* line 185, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-comment__wrapper__comments__comment__img-caption {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 65px;
+  max-width: 300px;
+  height: 1.2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* line 195, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-comment__wrapper__comments__comment__continer {
+  float: right;
+  width: 580px;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  padding: 20px 10px;
+}
+
+/* line 202, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-comment__wrapper__comments__comment__continer-text {
+  margin-bottom: 30px;
+}
+
+/* line 207, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-comment__formset {
+  width: 700px;
+  height: 262px;
+  padding: 24px;
+}
+
+/* line 212, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-comment__formset__form {
+  display: block;
+  font-size: 14px;
+}
+
+/* line 216, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-comment__formset__form-caution {
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  background-color: #fff6de;
+}
+
+/* line 222, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-comment__formset__form-textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #bbb;
+  font-size: 16px;
+  line-height: 1.5px;
+}
+
+/* line 232, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-comment__formset__form-btn {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  margin-top: 8px;
+  padding: 1px;
+  background-color: #a9a9a9;
+}
+
+/* line 240, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-comment__formset__form-btn-text {
+  color: #fff;
+}
+
+/* line 243, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.another-item__links {
+  display: block;
+  width: 700px;
+  height: 52px;
+  margin: 24px auto 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 251, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.another-item__links__left {
+  display: block;
+  float: left;
+}
+
+/* line 255, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.another-item__links__right {
+  display: block;
+  float: right;
+}
+
+/* line 259, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.another-item__links__left a,
+.another-item__links__right a {
+  font-size: 14px;
+  color: #00bfff;
+}
+
+/* line 264, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.sns-logo {
+  box-sizing: border-box;
+  height: 138px;
+  width: 700px;
+  margin: 0 auto 30px;
+  padding: 50px 252px 24px;
+  background-color: #fff;
+}
+
+/* line 272, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.sns-logo_wrapper {
+  display: block;
+  list-style-type: none;
+}
+
+/* line 276, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.sns-logo_wrapper__item {
+  display: inline-block;
+  float: left;
+  width: 44px;
+  height: 44px;
+  margin: 0 8px 8px 0;
+}
+
+/* line 283, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item_user_another-items {
+  box-sizing: border-box;
+  height: 390px;
+  width: 700px;
+  margin: 0 auto;
+  clear: both;
+}
+
+/* line 290, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item_user_another-items_header {
+  height: 40px;
+  font-size: 22px;
+  padding: 16px 0 0;
+  margin: 0;
+  background-color: #eeeeee;
+}
+
+/* line 297, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item_user_another-items_header_a {
+  color: #00bfff;
+  text-decoration: none;
+  margin: 0;
+}
+
+/* line 302, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item_user_another-items__wrapper {
+  margin-top: 0px;
+  width: 722px;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+}
+
+/* line 308, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item_user_another-items__wrapper-item-box {
+  margin: 15px 20px 0 0;
+  width: 220px;
+  height: 330px;
+  background-color: blue;
+  float: left;
+}
+
+/* line 315, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item_user_another-items__wrapper-item-box__photo {
+  display: block;
+  width: 220px;
+  height: 220px;
+  margin: 0;
+}
+
+/* line 321, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item_user_another-items_item-box__text {
+  width: 220px;
+  height: 110px;
+  margin: 0;
+  padding: 16px;
+  background-color: #fff;
+}
+
+/* line 328, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item_user_another-items_item-box__text_name {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 14px;
+  font-color: #333;
+}
+
+/* line 334, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item_user_another-items_item-box__text_price-box {
+  margin-top: 25px;
+}
+
+/* line 337, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-box__text_price-box__price {
+  float: left;
+  font-size: 20px;
+}
+
+/* line 341, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-box__text_price-box__favorite {
+  float: right;
+}
+
+/* line 344, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-box__text_price-box__favorite_icon {
+  float: left;
+  padding-right: 10px;
+}
+
+/* line 348, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-box__text_price-box__favorite_number {
+  float: right;
+}
+
+/* line 351, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-box__text_price-box__tax {
+  font-size: 10px;
+  clear: both;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+/* line 357, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item_another-items {
+  box-sizing: border-box;
+  height: 390px;
+  width: 700px;
+  padding-top: 30px;
+  margin: 0 auto;
+  clear: both;
+}
+
+/* line 367, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+footer {
+  clear: both;
+  width: 100%;
+  margin: 0;
+  padding-top: 60px;
+}
+
+/* line 373, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+/*.space {
+  padding-top: 60px;
+}
+*/
+/* カルーセル関係 */
+/* line 384, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+#carousel-prev, #carousel-next {
+  display: hidden;
+}
+
+/* line 387, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+#carousel-wrapper {
+  overflow: hidden;
+}
+
+/* line 390, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+#carousel-inner {
+  width: 1200px;
+  height: 100%;
+  background-color: #cccccc;
+  margin-left: -300px;
+}
+
+/* line 396, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+#carousel-inner ul.carousel-column {
+  float: left;
+  list-style-type: none;
+  width: 300px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 404, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+#carousel-inner ul.carousel-column li {
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+
+/* line 409, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+#carousel-inner ul.carousel-column li:first-child {
+  margin: 0;
+}
+
+/* line 412, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+#carousel-inner ul.carousel-column li img {
+  float: left;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border: none;
+  cursor: default;
+}
+
+/* line 420, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+#carousel-indicator ul {
+  width: 300px;
+  height: 75px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 426, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+#carousel-indicator li {
+  list-style-type: none;
+}
+
+/* line 429, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+#carousel-indicator li img {
+  float: left;
+  margin: 0;
+  width: 75px;
+  height: 75px;
+  background-color: #cccccc;
+  cursor: pointer;
+}
+
+/* line 438, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-info-condition {
+  box-sizing: border-box;
+  width: 700px;
+  margin: 8px auto;
+  background-color: white;
+}
+
+/* line 445, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-info-condition__formset {
+  width: 700px;
+  height: auto;
+  padding: 24px;
+}
+/* line 449, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-info-condition__formset p {
+  font-size: 16px;
+}
+
+/* line 454, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-info-condition__formset__form-btn {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  margin: 16px 0 16px 0;
+  padding: 1px;
+  color: white;
+  text-align: center;
+  background-color: #a9a9a9;
+}
+/* line 463, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-info-condition__formset__form-btn.red {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  margin: 16px 0 16px 0;
+  padding: 1px;
+  color: white;
+  text-align: center;
+  background-color: #ea352d;
+}
+/* line 473, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-detail-view.scss */
+.item-info-condition__formset__form-btn a {
+  color: white;
+}
+
+/* line 2, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+ul {
+  display: block;
+}
+
+/* line 6, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* line 12, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+
+/* line 18, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage {
+  display: block;
+  background-color: #f5f5f5;
+  height: 100%;
+  margin: 40px auto 0;
+  padding: 0 0 40px;
+  color: #333;
+}
+@media screen and (min-width: 1068px) {
+  /* line 18, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+  .mypage {
+    width: 1020px;
+    margin: 40px auto 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1068px) {
+  /* line 18, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+  .mypage {
+    width: 700px;
+  }
+}
+/* line 32, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage a {
+  color: #333;
+}
+/* line 35, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage__contents {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 0 0 0;
+}
+@media screen and (min-width: 1068px) {
+  /* line 35, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+  .mypage__contents {
+    float: right;
+    width: 700px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1068px) {
+  /* line 35, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+  .mypage__contents {
+    width: 100%;
+    float: none;
+  }
+}
+/* line 50, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage__contents__user {
+  background-color: #f5f5f5;
+}
+/* line 52, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage__contents__user .user-icon {
+  background-image: url(/assets/mercari_user_icon_back-d455e366c578ecfc4b42e17765f383cd38a5a547d4f7f0bfa1770af62448407c.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  height: 155px;
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  /* line 52, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+  .mypage__contents__user .user-icon {
+    height: 200px;
+  }
+}
+/* line 64, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage__contents__user .user-icon a {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translate(0, -50%);
+}
+/* line 70, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage__contents__user .user-icon a #user-icon-img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+/* line 76, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage__contents__user .user-icon a h2 {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+/* line 81, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage__contents__user .user-icon a .user-info {
+  margin: 8px 0 0;
+}
+/* line 83, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage__contents__user .user-icon a .user-info div {
+  display: inline-block;
+  font-size: 14px;
+}
+/* line 86, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage__contents__user .user-icon a .user-info div span {
+  margin: 0 0 0 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 92, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage__contents__user .user-icon a .user-info div + div {
+  margin: 0 0 0 16px;
+}
+/* line 99, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage__contents .mypage__tab-news-todo {
+  height: 100%;
+  background-color: #fff;
+}
+/* line 104, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage__contents .purchase__list {
+  margin: 40px 0 0;
+  background-color: #fff;
+}
+/* line 107, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage__contents .purchase__list__head {
+  padding: 0 16px;
+  background-color: #fafafa;
+  font-size: 16px;
+  line-height: 72px;
+  text-align: left;
+}
+
+/* line 122, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.nav-tabs {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: block;
+}
+/* line 127, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.nav-tabs li {
+  height: 100%;
+}
+/* line 129, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.nav-tabs li a {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #eee;
+  color: #333;
+  position: relative;
+  line-height: 72px;
+  width: 50%;
+  float: left;
+}
+/* line 139, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.nav-tabs li a:hover {
+  opacity: 0.7;
+}
+/* line 142, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.nav-tabs li a.active {
+  background-color: #fff;
+  border-top: 2px solid #ea352d;
+}
+/* line 146, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.nav-tabs li span {
+  position: absolute;
+  top: 16px;
+  right: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ea352d;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+}
+
+/* line 162, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.tab-content .mypage-item-list {
+  display: block;
+  text-align: left;
+}
+/* line 165, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.tab-content .mypage-item-list li {
+  border-bottom: 1px solid #eee;
+}
+/* line 167, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.tab-content .mypage-item-list li .mypage-item-link {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 80px;
+  padding: 16px;
+}
+/* line 174, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.tab-content .mypage-item-list li .mypage-item-link figure {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+}
+/* line 181, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.tab-content .mypage-item-list li .mypage-item-link figure img {
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+}
+/* line 192, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.tab-content .mypage-item-list li .mypage-item-link .mypage-item-body {
+  margin: 0 40px 0 68px;
+}
+/* line 194, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.tab-content .mypage-item-list li .mypage-item-link .mypage-item-body .mypage-item-text {
+  overflow: hidden;
+  line-height: 1.5;
+  max-height: 4.4em;
+}
+/* line 199, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.tab-content .mypage-item-list li .mypage-item-link .mypage-item-body time {
+  display: inline-block;
+  color: #888;
+}
+/* line 202, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.tab-content .mypage-item-list li .mypage-item-link .mypage-item-body time .fa-clock {
+  margin: 0 8px 0 0;
+}
+/* line 207, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.tab-content .mypage-item-list li .mypage-item-link .fa-angle-right {
+  position: absolute;
+  font-size: 24px;
+  top: 50%;
+  right: 16px;
+  transform: translate(0, -80%);
+}
+/* line 216, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.tab-content .mypage-item-list .all-list-view {
+  padding: 16px;
+}
+/* line 218, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.tab-content .mypage-item-list .all-list-view a {
+  display: block;
+  height: 56px;
+  margin: 0 auto;
+  background-color: #eee;
+  line-height: 56px;
+  text-align: center;
+}
+
+/* line 230, /Users/ryuzan/projects/kadai/app/assets/stylesheets/mypage.scss */
+.mypage-item-list__not-found {
+  padding: 160px 0 60px;
+  background-image: url(/assets/nothing_to_do-5825dbff5dc565d3adb1d30c599f68ae7570e8b71a8c3f6021f3ae93f675c610.png);
+  background-size: 78px 85px;
+  background-position: center 40px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  text-align: center;
+  color: #ccc;
+  font-weight: 600;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/side-bar.scss */
+.mypage__side-bar {
+  margin: 40px auto 0;
+}
+@media screen and (min-width: 1068px) {
+  /* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/side-bar.scss */
+  .mypage__side-bar {
+    width: 280px;
+    float: left;
+    margin: 0 40px 0 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1068px) {
+  /* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/side-bar.scss */
+  .mypage__side-bar {
+    width: 700px;
+  }
+}
+/* line 12, /Users/ryuzan/projects/kadai/app/assets/stylesheets/side-bar.scss */
+.mypage__side-bar li:first-child {
+  border: 0;
+}
+/* line 15, /Users/ryuzan/projects/kadai/app/assets/stylesheets/side-bar.scss */
+.mypage__side-bar li {
+  border-top: 1px solid #eee;
+}
+/* line 17, /Users/ryuzan/projects/kadai/app/assets/stylesheets/side-bar.scss */
+.mypage__side-bar li .active {
+  background-color: #eee;
+  font-weight: 600;
+}
+/* line 20, /Users/ryuzan/projects/kadai/app/assets/stylesheets/side-bar.scss */
+.mypage__side-bar li .active .fa-angle-right {
+  color: #333;
+}
+/* line 24, /Users/ryuzan/projects/kadai/app/assets/stylesheets/side-bar.scss */
+.mypage__side-bar li a {
+  position: relative;
+  display: block;
+  padding: 14px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+}
+/* line 31, /Users/ryuzan/projects/kadai/app/assets/stylesheets/side-bar.scss */
+.mypage__side-bar li a i {
+  position: absolute;
+  top: 35%;
+  right: 16px;
+  color: #ccc;
+  font-size: 1.2em;
+}
+/* line 41, /Users/ryuzan/projects/kadai/app/assets/stylesheets/side-bar.scss */
+.mypage__side-bar__list__head {
+  margin: 40px 0 0;
+  font-size: 16px;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/breadcrumbs.scss */
+.breadcrumbs {
+  position: relative;
+  border-top: 2px solid #eee;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+  background: #fff;
+  height: 40px;
+  width: 100%;
+  padding-left: 10%;
+  display: flex;
+}
+/* line 11, /Users/ryuzan/projects/kadai/app/assets/stylesheets/breadcrumbs.scss */
+.breadcrumbs li {
+  display: block;
+  height: auto;
+  background-color: white;
+  line-height: 40px;
+}
+/* line 16, /Users/ryuzan/projects/kadai/app/assets/stylesheets/breadcrumbs.scss */
+.breadcrumbs li a {
+  display: block;
+  height: auto;
+  color: #333;
+}
+
+/* line 24, /Users/ryuzan/projects/kadai/app/assets/stylesheets/breadcrumbs.scss */
+.fa.fa-caret-right {
+  display: block;
+  line-height: 40px;
+  margin: 0 10px 0 10px;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/profile-edit.scss */
+.mypage__contents__profile-edit {
+  background-color: #fff;
+}
+/* line 3, /Users/ryuzan/projects/kadai/app/assets/stylesheets/profile-edit.scss */
+.mypage__contents__profile-edit h2 {
+  padding: 14px 4%;
+  border-bottom: 1px solid #f5f5f5;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 18px;
+  margin: 0;
+}
+/* line 12, /Users/ryuzan/projects/kadai/app/assets/stylesheets/profile-edit.scss */
+.mypage__contents__profile-edit .profile-edit__submit__icon {
+  padding: 72px 16px 24px;
+  background-image: url(/assets/mercari_user_icon_back-d455e366c578ecfc4b42e17765f383cd38a5a547d4f7f0bfa1770af62448407c.png);
+  background-size: cover;
+  text-align: center;
+  font-size: 0;
+}
+/* line 18, /Users/ryuzan/projects/kadai/app/assets/stylesheets/profile-edit.scss */
+.mypage__contents__profile-edit .profile-edit__submit__icon figure {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  margin: 0;
+}
+/* line 26, /Users/ryuzan/projects/kadai/app/assets/stylesheets/profile-edit.scss */
+.mypage__contents__profile-edit .profile-edit__submit__icon figure img {
+  vertical-align: middle;
+}
+/* line 30, /Users/ryuzan/projects/kadai/app/assets/stylesheets/profile-edit.scss */
+.mypage__contents__profile-edit .profile-edit__submit__icon input {
+  width: 220px;
+  height: 48px;
+  margin: 0 0 0 8px;
+  vertical-align: middle;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  line-height: 1.5;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+/* line 44, /Users/ryuzan/projects/kadai/app/assets/stylesheets/profile-edit.scss */
+.mypage__contents__profile-edit .profile-edit__submit__content {
+  padding: 40px 16px;
+}
+/* line 46, /Users/ryuzan/projects/kadai/app/assets/stylesheets/profile-edit.scss */
+.mypage__contents__profile-edit .profile-edit__submit__content textarea {
+  display: block;
+  box-sizing: border-box;
+  min-height: 216px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* line 57, /Users/ryuzan/projects/kadai/app/assets/stylesheets/profile-edit.scss */
+.mypage__contents__profile-edit .profile-edit__submit__content .btn_red {
+  margin: 16px 0 0;
+  background-color: #ea352d;
+  color: #fff;
+  border: 1px solid #ea352d;
+  display: block;
+  width: 100%;
+  line-height: 48px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: all ease-out .3s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+}
+
+/* line 77, /Users/ryuzan/projects/kadai/app/assets/stylesheets/profile-edit.scss */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+@media screen and (min-width: 1068px) {
+  /* line 2, /Users/ryuzan/projects/kadai/app/assets/stylesheets/1068px.scss */
+  .global-footer nav {
+    width: 1020px;
+  }
+
+  /* line 5, /Users/ryuzan/projects/kadai/app/assets/stylesheets/1068px.scss */
+  .l-container {
+    width: 1020px;
+    margin: 40px auto 0;
+    background-color: #f5f5f5;
+  }
+
+  /* line 10, /Users/ryuzan/projects/kadai/app/assets/stylesheets/1068px.scss */
+  .l-content {
+    float: right;
+    width: 700px;
+  }
+
+  /* line 14, /Users/ryuzan/projects/kadai/app/assets/stylesheets/1068px.scss */
+  .l-side {
+    float: left;
+    width: 280px;
+    margin: 0 40px 0 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1068px) {
+  /* line 2, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .global-footer {
+    padding: 60px 0;
+    text-align: center;
+  }
+  /* line 5, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .global-footer nav {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  /* line 10, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .download-app {
+    display: none;
+  }
+
+  /* line 13, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .footer-cell {
+    display: inline-block;
+    width: 23%;
+    margin: 0 2% 0 0;
+    vertical-align: top;
+  }
+
+  /* line 19, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .footer-cell:last-child {
+    margin: 0;
+  }
+
+  /* line 22, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .footer-nav-lang a {
+    width: auto;
+  }
+
+  /* line 25, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .footer-sell-btn {
+    bottom: 32px;
+    right: 32px;
+    width: 160px;
+    height: 160px;
+    font-size: 22px;
+  }
+  /* line 31, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .footer-sell-btn div {
+    margin: 24px 0 0;
+  }
+  /* line 34, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .footer-sell-btn .icon-camera {
+    margin: 8px 0 0;
+    font-size: 54px;
+  }
+
+  /* line 39, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .l-container {
+    width: 700px;
+    background-color: #f5f5f5;
+  }
+
+  /* line 43, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .l-content {
+    float: none;
+    width: 700px;
+  }
+
+  /* line 47, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .l-chapter-head {
+    font-size: 24px;
+    padding: 8px 24px;
+  }
+
+  /* line 51, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .l-single-inner {
+    padding: 64px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 57, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .l-chapter-head {
+    font-size: 24px;
+    padding: 8px 24px;
+    margin: 0;
+  }
+}
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+body {
+  font-size: 14px;
+  line-height: 1;
+  background-color: #f5f5f5;
+}
+
+/* line 6, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+h2 {
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+/* line 11, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+main {
+  display: block;
+}
+
+/* line 15, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-container {
+  display: block;
+  background-color: #f5f5f5;
+  height: 100%;
+  margin: 40px auto 0;
+  padding: 0 0 40px;
+  color: #333;
+}
+
+/* line 24, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-content {
+  display: block;
+  background-color: #f5f5f5;
+  height: 100%;
+  margin: 0 auto 0;
+  padding: 0 0 40px;
+  color: #333;
+}
+
+/* line 33, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-chapter-container {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 0 0 0;
+}
+
+/* line 41, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-chapter-head {
+  padding: 12px 4%;
+  border-bottom: 1px solid #f5f5f5;
+  text-align: center;
+  font-size: 24px;
+  mergin: 0;
+}
+
+/* line 49, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.btn-default {
+  display: block;
+  width: 100%;
+  line-height: 48px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out .3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 61, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.btn-red {
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+}
+
+/* line 67, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-single-inner {
+  border-top: 1px solid #f5f5f5;
+  padding: 40px;
+}
+/* line 70, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-single-inner p {
+  margin: 8px 0 0;
+  line-height: 1.5;
+}
+/* line 74, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-single-inner .btn-red {
+  margin: 40px 0 0;
+}
+
+/* line 79, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+input {
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 87, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-single-content {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* line 92, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group:first-child {
+  margin: 0;
+}
+
+/* line 96, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+label {
+  display: inline-block;
+}
+
+/* line 100, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-require, .form-arbitrary, .message-is-seller, .news-private {
+  margin: 0 0 0 8px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+/* line 109, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.input-default {
+  height: 48px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* line 119, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-require {
+  background: #ea352d;
+}
+
+/* line 123, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.select-wrap {
+  position: relative;
+  background: #fff;
+}
+
+/* line 128, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 132, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img#visa {
+  width: 49px;
+  height: 20px;
+}
+
+/* line 137, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img#mc {
+  width: 34px;
+  height: 20px;
+}
+
+/* line 142, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img#sc {
+  width: 30px;
+  height: 20px;
+}
+
+/* line 147, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img#jcb {
+  width: 32px;
+  height: 20px;
+}
+
+/* line 152, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img#ae {
+  width: 21px;
+  height: 20px;
+}
+
+/* line 157, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img#dc {
+  width: 32px;
+  height: 20px;
+}
+
+/* line 162, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img#discover {
+  width: 32px;
+  height: 20px;
+}
+
+/* line 167, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+select {
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 173, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group {
+  margin: 40px 0 0;
+}
+/* line 175, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group label {
+  font-weight: 600;
+}
+/* line 178, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group .input-default {
+  width: 100%;
+  margin: 8px 0 0;
+}
+/* line 182, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group .has-error-text {
+  color: #ea352d;
+  line-height: 1.5;
+  font-size: 14px;
+}
+/* line 187, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group .signup-card-list {
+  margin: 8px 0 0;
+  font-size: 0;
+}
+/* line 190, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group .signup-card-list li:first-child {
+  margin: 0;
+}
+/* line 193, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group .signup-card-list li {
+  display: inline-block;
+  margin: 0 0 0 8px;
+  vertical-align: middle;
+}
+/* line 199, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group .select-wrap {
+  margin: 8px 0 0;
+  width: 112px;
+  height: 48px;
+}
+/* line 204, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group select {
+  width: 100%;
+}
+/* line 207, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group .fas.fa-chevron-down {
+  position: absolute;
+}
+
+/* line 212, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.select-default {
+  position: relative;
+  z-index: 2;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+/* line 226, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-form-expire .select-wrap {
+  display: inline-block;
+  width: 35%;
+}
+/* line 229, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-form-expire .select-wrap .fas.fa-angle-down {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  z-index: 2;
+  color: #888;
+  font-size: 20px;
+  transform: translate(0, -50%);
+}
+/* line 238, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-form-expire .select-wrap + span {
+  margin: 0 8px;
+}
+
+/* line 244, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.fas.fa-angle-down {
+  display: inline-block;
+  speak: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 255, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-seqcode {
+  position: relative;
+  margin: 8px 0 0;
+}
+
+/* line 260, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-seqcode-text {
+  text-align: right;
+  color: #0099e8;
+}
+
+/* line 265, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-question {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #0099e8;
+  color: #fff;
+  line-height: 14px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* line 277, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-seqcode-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 28px;
+  z-index: 1;
+  padding: 16px;
+  border-radius: 6px;
+  background: #eee;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out .3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* line 295, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-seqcode-info.is-show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 300, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-seqcode-info img {
+  margin: 8px 0 0;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+body {
+  font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+  font-size: 14px;
+}
+
+/* line 6, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* line 12, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 16, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-group {
+  margin: 40px 0 0;
+}
+/* line 18, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-group label {
+  font-weight: 600;
+  display: inline-block;
+}
+/* line 22, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-group p {
+  margin: 8px 0 0;
+  line-height: 1.5;
+}
+/* line 26, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-group .input-default {
+  width: 100%;
+  margin: 8px 0 0;
+}
+/* line 30, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-group .select-wrap {
+  margin: 8px 0 0;
+  position: relative;
+  background-color: #fff;
+}
+/* line 36, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-group select {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  background-position-x: 0px;
+  background-position-y: center;
+  -webkit-appearance: none;
+}
+/* line 52, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-group .fa-angle-down {
+  position: absolute;
+  right: 16px;
+  top: 25%;
+  z-index: 2;
+  color: #888;
+  transform: transrate(0, -50%);
+  display: inline-block;
+  pointer-events: none;
+}
+
+/* line 64, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.btn-red {
+  margin: 40px 0 0 0;
+  background-color: #ea352d;
+  border: 1p solid #ea352d;
+  color: #fff;
+  width: 100%;
+  line-height: 48px;
+  font-size: 14px;
+  transition: all ease-out .3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 77, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-arbitrary {
+  background-color: #ccc;
+  margin: 0 0 0 8px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+/* line 87, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.input-default {
+  height: 48px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  line-height: 1.5;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* line 98, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.mypage__contents__registration_user-info {
+  background-color: #fff;
+  text-align: left;
+}
+/* line 101, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.mypage__contents__registration_user-info .contents__head {
+  padding: 14px 4%;
+  border-bottom: 1px solid #f5f5f5;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 18px;
+  margin: 0;
+}
+/* line 109, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.mypage__contents__registration_user-info .registration__form {
+  border-top: 1px solid #f5f5f5;
+  padding: 64px;
+}
+/* line 112, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.mypage__contents__registration_user-info .registration__form p {
+  margin: 8px 0 0;
+  line-height: 1.5;
+}
+/* line 115, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.mypage__contents__registration_user-info .registration__form p a {
+  color: #0099e8;
+  text-decoration: none;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+body {
+  position: relative;
+  min-height: 100%;
+  background: #f5f5f5;
+  font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+/* line 11, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+* {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 15, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+*, ::before, ::after {
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
+}
+
+/* line 20, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.main {
+  background-color: #f5f5f5;
+  font-size: 18px;
+}
+
+/* line 24, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.main-section {
+  width: 700px;
+  /* height: 1000px;*/
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* line 30, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.main-section__inner__head {
+  padding: 35px 0;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.4;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+/* line 39, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.main-section__inner__form-container {
+  margin: 40px 40px 40px;
+}
+
+/* line 42, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.main-section__inner__form-container-label {
+  height: 30px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+/* line 47, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.fmain-section__inner__form-container-span {
+  display: inline-block;
+  background-color: #ea352d;
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+
+/* line 57, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.fmain-section__inner__form-container-span_gray {
+  display: inline-block;
+  background-color: #ccc;
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+
+/* line 67, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.filelabel {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+/* line 73, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.fmain-section__inner__form-container-p {
+  margin: 10px 5px 20px;
+  font-size: 15px;
+}
+
+/* line 77, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.fmain-section__inner__form-container-textarea {
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* line 85, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.main-section__inner__form-container__head {
+  color: #999;
+  width: 35%;
+  margin: 0;
+  padding-left: 15px;
+  float: left;
+}
+
+/* line 92, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.main-section__inner__form-container__rightbox {
+  float: right;
+  width: 65%;
+}
+
+/* line 96, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.main-section__inner__form-container-label-price {
+  height: 30px;
+  padding: 5px;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+/* line 102, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.fmain-section__inner__form-container-span-price {
+  display: inline-block;
+  background-color: #ea352d;
+  margin: 15px 90px 0 8px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+/* line 112, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.main-section__inner__form-container__fee {
+  height: 50px;
+  font-weight: bold;
+  line-height: 50px;
+  float: left;
+  padding: 5px 5px 40px;
+}
+
+/* line 119, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.main-section__inner__form-container__fee-show {
+  height: 50px;
+  padding-right: 10px;
+  line-height: 50px;
+  float: right;
+  margin-top: 10px;
+}
+
+/* line 126, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.main-section__inner__form-container-text {
+  font-size: 14px;
+  margin: 40px 40px 40px;
+}
+
+/* line 130, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+#submit {
+  width: 620px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: red;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 40px 40px;
+  cursor: pointer;
+}
+
+/* line 140, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+#return {
+  width: 300px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: #eee;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 200px 40px;
+  cursor: pointer;
+}
+
+/* line 150, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.input-default {
+  display: block;
+  height: 50px;
+  width: 100%;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* line 161, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.input-default-price {
+  display: block;
+  height: 50px;
+  width: 50%;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  line-height: 1.5;
+  font-size: 16px;
+  float: right;
+}
+
+/* line 173, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.brand {
+  margin: 0 0 40px;
+}
+
+/* line 176, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.img-box {
+  height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-bottom: 80px;
+}
+
+/* line 186, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.input-img {
+  display: none;
+}
+
+/* line 189, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.select-default {
+  display: block;
+  height: 50px;
+  width: 100%;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  line-height: 1.5;
+  font-size: 16px;
+  margin: 0 0 40px;
+}
+
+/* line 201, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.long-margin {
+  margin-bottom: 80px;
+}
+
+/* line 204, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.underline {
+  border-bottom: 1px solid #CCC;
+}
+
+/* line 207, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.blue {
+  color: blue;
+}
+
+/* line 210, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item_exhibition.scss */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* line 3, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 6, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+main {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+/* line 10, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* line 18, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.single_header {
+  clear: both;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  /* line 18, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+  .single_header {
+    height: 128px;
+  }
+}
+/* line 24, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.single_header__image {
+  display: inline-block;
+  margin: 11px 0 12px;
+}
+@media screen and (min-width: 768px) {
+  /* line 24, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+  .single_header__image {
+    margin: 40px 0 0;
+  }
+}
+/* line 30, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.single_header__image__logo {
+  display: inline-block;
+  width: 120px;
+  height: 33px;
+  margin: 0 8px 0 0;
+  line-height: 33px;
+}
+@media screen and (min-width: 768px) {
+  /* line 30, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+  .single_header__image__logo {
+    width: 185px;
+    height: 49px;
+    line-height: 49px;
+  }
+}
+/* line 41, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.single_header__image__logo .mercari_logo_horizontal {
+  width: 120px;
+  height: 33px;
+  vertical-align: middle;
+}
+@media screen and (min-width: 768px) {
+  /* line 41, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+  .single_header__image__logo .mercari_logo_horizontal {
+    width: 185px;
+    height: 49px;
+  }
+}
+
+/* line 56, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container {
+  background-color: white;
+}
+@media screen and (min-width: 768px) {
+  /* line 56, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+  .main-container {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
+/* line 63, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__heading {
+  text-align: center;
+  line-height: 1.5;
+  padding: 24px 8px;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  /* line 63, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+  .main-container__heading {
+    font-size: 22px;
+    padding: 32px 16px;
+  }
+}
+
+/* line 74, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__heading-text {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* line 80, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__itemInfo {
+  width: 100%;
+  border-top: 1px solid #f5f5f5;
+  padding-bottom: 40px;
+}
+
+/* line 85, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__itemInfo__inner {
+  width: 320px;
+  margin: 20px auto;
+}
+
+/* line 89, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__itemInfo__inner_imagebox-img {
+  display: block;
+  width: 148px;
+  height: 148px;
+  margin: 0 auto;
+}
+
+/* line 95, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__itemInfo__inner__itemname {
+  margin: 8px 0 0px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* line 100, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__itemInfo__inner__form {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 104, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__itemInfo__inner__form-price {
+  margin: 8px 0;
+  font-size: 28px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* line 111, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__itemInfo__inner__form-price-deriver {
+  margin: 0 0 0 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* line 116, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__itemInfo__inner__form-pointlist {
+  list-style-type: none;
+  /*  margin: 0;*/
+  padding: 0;
+}
+
+/* line 121, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__itemInfo__inner__form-pointlist-boxtext {
+  padding: 16px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* line 126, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__itemInfo__inner__form-psyprice {
+  /* display: block;*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*  width: 320px;*/
+}
+
+/* line 133, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__itemInfo__inner__form-psyprice-box {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* line 139, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__itemInfo__inner__form-psyprice-box-text {
+  display: inline-block;
+  float: left;
+  padding: 16px 0;
+}
+
+/* line 145, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__itemInfo__inner__form-psyprice-box-price {
+  display: inline-block;
+  float: right;
+  padding: 16px 0;
+}
+
+/* line 151, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.payjp-form {
+  padding-top: 50px;
+}
+
+/* line 155, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+#payjp_checkout_box {
+  width: 90px;
+  margin: 0 auto;
+}
+
+/* line 165, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__useraddress {
+  box-sizing: border-box;
+  border-top: 1px solid #f5f5f5;
+  margin: 40px 0 0;
+  padding: 24px 12.5% 0;
+}
+
+/* line 171, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__useraddress__box {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* line 175, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__useraddress__box-header {
+  font-size: 14px;
+}
+
+/* line 178, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__useraddress__box-address {
+  font-size: 14px;
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+/* line 183, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__useraddress__box-changeadd {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+}
+
+/* line 191, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__cardInfo {
+  box-sizing: border-box;
+  border-top: 1px solid #f5f5f5;
+  margin: 40px 0 0;
+  padding: 24px 12.5%;
+}
+
+/* line 197, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__cardInfo__box {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* line 201, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__cardInfo__box-header {
+  font-size: 14px;
+}
+
+/* line 204, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__cardInfo__box-cardNo {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* line 208, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__cardInfo__box-cardimg {
+  width: 34px;
+  height: 20px;
+  background-color: blue;
+}
+
+/* line 213, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.main-container__cardInfo__box-changeNo {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+}
+
+/* line 221, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.single_footer {
+  height: 250px;
+  padding: 40px 0;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  /* line 221, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+  .single_footer {
+    height: 220px;
+    width: 456px;
+    margin: 0 auto;
+  }
+}
+/* line 230, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.single_footer li {
+  margin: 16px 0 0;
+  height: 12px;
+}
+@media screen and (min-width: 768px) {
+  /* line 230, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+  .single_footer li {
+    margin: 0 0 0 16px;
+    display: inline-block;
+  }
+}
+/* line 237, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.single_footer li a {
+  color: black;
+  font-size: 12px;
+}
+/* line 242, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.single_footer li:first-child {
+  margin: 0;
+}
+/* line 246, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.single_footer .single_footer__image {
+  display: block;
+  width: 80px;
+  height: 65px;
+  margin: 40px auto 0;
+}
+/* line 251, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.single_footer .single_footer__image__logo {
+  width: 80px;
+  height: 65px;
+  vertical-align: middle;
+}
+/* line 257, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.single_footer p {
+  margin: 8px 0 0;
+}
+/* line 259, /Users/ryuzan/projects/kadai/app/assets/stylesheets/confirm_buy.scss */
+.single_footer p small {
+  font-size: 12px;
+}
+
+/* line 3, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.single_header {
+  clear: both;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  /* line 3, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+  .single_header {
+    height: 128px;
+  }
+}
+/* line 9, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.single_header__image {
+  display: inline-block;
+  margin: 11px 0 12px;
+}
+@media screen and (min-width: 768px) {
+  /* line 9, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+  .single_header__image {
+    margin: 40px 0 0;
+  }
+}
+/* line 15, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.single_header__image__logo {
+  display: inline-block;
+  width: 120px;
+  height: 33px;
+  margin: 0 8px 0 0;
+  line-height: 33px;
+}
+@media screen and (min-width: 768px) {
+  /* line 15, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+  .single_header__image__logo {
+    width: 185px;
+    height: 49px;
+    line-height: 49px;
+  }
+}
+/* line 26, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.single_header__image__logo .mercari_logo_horizontal {
+  width: 120px;
+  height: 33px;
+  vertical-align: middle;
+}
+@media screen and (min-width: 768px) {
+  /* line 26, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+  .single_header__image__logo .mercari_logo_horizontal {
+    width: 185px;
+    height: 49px;
+  }
+}
+
+/* line 42, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.single_footer {
+  height: 250px;
+  padding: 40px 0;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  /* line 42, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+  .single_footer {
+    height: 220px;
+    width: 456px;
+    margin: 0 auto;
+  }
+}
+/* line 51, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.single_footer li {
+  margin: 16px 0 0;
+  height: 12px;
+}
+@media screen and (min-width: 768px) {
+  /* line 51, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+  .single_footer li {
+    margin: 0 0 0 16px;
+    display: inline-block;
+  }
+}
+/* line 58, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.single_footer li a {
+  color: black;
+  font-size: 12px;
+}
+/* line 63, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.single_footer li:first-child {
+  margin: 0;
+}
+/* line 67, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.single_footer .single_footer__image {
+  display: block;
+  width: 80px;
+  height: 65px;
+  margin: 40px auto 0;
+}
+/* line 72, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.single_footer .single_footer__image__logo {
+  width: 80px;
+  height: 65px;
+  vertical-align: middle;
+}
+/* line 78, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.single_footer p {
+  margin: 8px 0 0;
+}
+/* line 80, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.single_footer p small {
+  font-size: 12px;
+}
+
+/* line 90, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.main-container {
+  background-color: white;
+}
+@media screen and (min-width: 768px) {
+  /* line 90, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+  .main-container {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
+/* line 97, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.main-container__heading {
+  text-align: center;
+  line-height: 1.5;
+  padding: 24px 8px;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  /* line 97, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+  .main-container__heading {
+    font-size: 22px;
+    padding: 32px 16px;
+  }
+}
+
+/* line 108, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.main-container__heading-text {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* line 114, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.main-container__itemInfo {
+  width: 100%;
+  border-top: 1px solid #f5f5f5;
+  padding-bottom: 40px;
+}
+
+/* line 119, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.main-container__itemInfo__inner {
+  width: 320px;
+  margin: 20px auto;
+}
+
+/* line 123, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.main-container__itemInfo__inner_imagebox-img {
+  display: block;
+  width: 148px;
+  height: 148px;
+  margin: 0 auto;
+}
+
+/* line 129, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.main-container__itemInfo__inner__itemname {
+  margin: 8px 0 0px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* line 134, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.main-container__itemInfo__inner__form {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 138, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.main-container__itemInfo__inner__form-price {
+  margin: 8px 0;
+  font-size: 28px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* line 145, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.main-container__itemInfo__inner__form-price-deriver {
+  margin: 0 0 0 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* line 151, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.main-container__itemInfo__inner__back-to_top_btn {
+  width: 286px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 20px auto 0;
+  font-weight: bold;
+  background-color: red;
+}
+
+/* line 160, /Users/ryuzan/projects/kadai/app/assets/stylesheets/complete_buy.scss */
+.main-container__itemInfo__inner__back-to_top_btn a {
+  color: white;
+}
+
+@media screen and (min-width: 1068px) {
+  /* line 2, /Users/ryuzan/projects/kadai/app/assets/stylesheets/1068px.scss */
+  .global-footer nav {
+    width: 1020px;
+  }
+
+  /* line 5, /Users/ryuzan/projects/kadai/app/assets/stylesheets/1068px.scss */
+  .l-container {
+    width: 1020px;
+    margin: 40px auto 0;
+    background-color: #f5f5f5;
+  }
+
+  /* line 10, /Users/ryuzan/projects/kadai/app/assets/stylesheets/1068px.scss */
+  .l-content {
+    float: right;
+    width: 700px;
+  }
+
+  /* line 14, /Users/ryuzan/projects/kadai/app/assets/stylesheets/1068px.scss */
+  .l-side {
+    float: left;
+    width: 280px;
+    margin: 0 40px 0 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1068px) {
+  /* line 2, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .global-footer {
+    padding: 60px 0;
+    text-align: center;
+  }
+  /* line 5, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .global-footer nav {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  /* line 10, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .download-app {
+    display: none;
+  }
+
+  /* line 13, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .footer-cell {
+    display: inline-block;
+    width: 23%;
+    margin: 0 2% 0 0;
+    vertical-align: top;
+  }
+
+  /* line 19, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .footer-cell:last-child {
+    margin: 0;
+  }
+
+  /* line 22, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .footer-nav-lang a {
+    width: auto;
+  }
+
+  /* line 25, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .footer-sell-btn {
+    bottom: 32px;
+    right: 32px;
+    width: 160px;
+    height: 160px;
+    font-size: 22px;
+  }
+  /* line 31, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .footer-sell-btn div {
+    margin: 24px 0 0;
+  }
+  /* line 34, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .footer-sell-btn .icon-camera {
+    margin: 8px 0 0;
+    font-size: 54px;
+  }
+
+  /* line 39, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .l-container {
+    width: 700px;
+    background-color: #f5f5f5;
+  }
+
+  /* line 43, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .l-content {
+    float: none;
+    width: 700px;
+  }
+
+  /* line 47, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .l-chapter-head {
+    font-size: 24px;
+    padding: 8px 24px;
+  }
+
+  /* line 51, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .l-single-inner {
+    padding: 64px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 57, /Users/ryuzan/projects/kadai/app/assets/stylesheets/768px.scss */
+  .l-chapter-head {
+    font-size: 24px;
+    padding: 8px 24px;
+    margin: 0;
+  }
+}
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+body {
+  font-size: 14px;
+  line-height: 1;
+  background-color: #f5f5f5;
+}
+
+/* line 6, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+h2 {
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+/* line 11, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+main {
+  display: block;
+}
+
+/* line 15, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-container {
+  display: block;
+  background-color: #f5f5f5;
+  height: 100%;
+  margin: 40px auto 0;
+  padding: 0 0 40px;
+  color: #333;
+}
+
+/* line 24, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-content {
+  display: block;
+  background-color: #f5f5f5;
+  height: 100%;
+  margin: 0 auto 0;
+  padding: 0 0 40px;
+  color: #333;
+}
+
+/* line 33, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-chapter-container {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 0 0 0;
+}
+
+/* line 41, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-chapter-head {
+  padding: 12px 4%;
+  border-bottom: 1px solid #f5f5f5;
+  text-align: center;
+  font-size: 24px;
+  mergin: 0;
+}
+
+/* line 49, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.btn-default {
+  display: block;
+  width: 100%;
+  line-height: 48px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out .3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 61, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.btn-red {
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+}
+
+/* line 67, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-single-inner {
+  border-top: 1px solid #f5f5f5;
+  padding: 40px;
+}
+/* line 70, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-single-inner p {
+  margin: 8px 0 0;
+  line-height: 1.5;
+}
+/* line 74, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-single-inner .btn-red {
+  margin: 40px 0 0;
+}
+
+/* line 79, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+input {
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 87, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.l-single-content {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* line 92, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group:first-child {
+  margin: 0;
+}
+
+/* line 96, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+label {
+  display: inline-block;
+}
+
+/* line 100, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-require, .form-arbitrary, .message-is-seller, .news-private {
+  margin: 0 0 0 8px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+/* line 109, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.input-default {
+  height: 48px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* line 119, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-require {
+  background: #ea352d;
+}
+
+/* line 123, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.select-wrap {
+  position: relative;
+  background: #fff;
+}
+
+/* line 128, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 132, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img#visa {
+  width: 49px;
+  height: 20px;
+}
+
+/* line 137, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img#mc {
+  width: 34px;
+  height: 20px;
+}
+
+/* line 142, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img#sc {
+  width: 30px;
+  height: 20px;
+}
+
+/* line 147, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img#jcb {
+  width: 32px;
+  height: 20px;
+}
+
+/* line 152, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img#ae {
+  width: 21px;
+  height: 20px;
+}
+
+/* line 157, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img#dc {
+  width: 32px;
+  height: 20px;
+}
+
+/* line 162, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+img#discover {
+  width: 32px;
+  height: 20px;
+}
+
+/* line 167, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+select {
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 173, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group {
+  margin: 40px 0 0;
+}
+/* line 175, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group label {
+  font-weight: 600;
+}
+/* line 178, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group .input-default {
+  width: 100%;
+  margin: 8px 0 0;
+}
+/* line 182, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group .has-error-text {
+  color: #ea352d;
+  line-height: 1.5;
+  font-size: 14px;
+}
+/* line 187, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group .signup-card-list {
+  margin: 8px 0 0;
+  font-size: 0;
+}
+/* line 190, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group .signup-card-list li:first-child {
+  margin: 0;
+}
+/* line 193, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group .signup-card-list li {
+  display: inline-block;
+  margin: 0 0 0 8px;
+  vertical-align: middle;
+}
+/* line 199, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group .select-wrap {
+  margin: 8px 0 0;
+  width: 112px;
+  height: 48px;
+}
+/* line 204, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group select {
+  width: 100%;
+}
+/* line 207, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-group .fas.fa-chevron-down {
+  position: absolute;
+}
+
+/* line 212, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.select-default {
+  position: relative;
+  z-index: 2;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+/* line 226, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-form-expire .select-wrap {
+  display: inline-block;
+  width: 35%;
+}
+/* line 229, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-form-expire .select-wrap .fas.fa-angle-down {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  z-index: 2;
+  color: #888;
+  font-size: 20px;
+  transform: translate(0, -50%);
+}
+/* line 238, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-form-expire .select-wrap + span {
+  margin: 0 8px;
+}
+
+/* line 244, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.fas.fa-angle-down {
+  display: inline-block;
+  speak: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 255, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-seqcode {
+  position: relative;
+  margin: 8px 0 0;
+}
+
+/* line 260, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-seqcode-text {
+  text-align: right;
+  color: #0099e8;
+}
+
+/* line 265, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.form-question {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #0099e8;
+  color: #fff;
+  line-height: 14px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* line 277, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-seqcode-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 28px;
+  z-index: 1;
+  padding: 16px;
+  border-radius: 6px;
+  background: #eee;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out .3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* line 295, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-seqcode-info.is-show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 300, /Users/ryuzan/projects/kadai/app/assets/stylesheets/creditcard.scss */
+.signup-seqcode-info img {
+  margin: 8px 0 0;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/logout.scss */
+.btn-default.btn-red {
+  margin: auto;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper {
+  position: relative;
+  margin-bottom: 60px;
+  padding: 0;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  border: 5px solid #fff;
+  background: #fff;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bxslider {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+ul.bxslider {
+  list-style: none;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-viewport {
+  -webkit-transform: translatez(0);
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url(images/bx_loader.gif) center center no-repeat #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: 700;
+  color: #666;
+  padding-top: 20px;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #666;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover {
+  background: #000;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item, .bx-wrapper .bx-pager-item {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-pager-item {
+  font-size: 0;
+  line-height: 0;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-prev {
+  left: 10px;
+  background: url(images/controls.png) 0 -32px no-repeat;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-prev:focus, .bx-wrapper .bx-prev:hover {
+  background-position: 0 0;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-next {
+  right: 10px;
+  background: url(images/controls.png) -43px -32px no-repeat;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-next:focus, .bx-wrapper .bx-next:hover {
+  background-position: -43px 0;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-controls-auto {
+  text-align: center;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  background: url(images/controls.png) -86px -11px no-repeat;
+  margin: 0 3px;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-controls-auto .bx-start.active, .bx-wrapper .bx-controls-auto .bx-start:focus, .bx-wrapper .bx-controls-auto .bx-start:hover {
+  background-position: -86px 0;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 9px;
+  height: 11px;
+  outline: 0;
+  background: url(images/controls.png) -86px -44px no-repeat;
+  margin: 0 3px;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-controls-auto .bx-stop.active, .bx-wrapper .bx-controls-auto .bx-stop:focus, .bx-wrapper .bx-controls-auto .bx-stop:hover {
+  background-position: -86px -33px;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/jquery.bxslider.min.scss */
+.bx-wrapper .bx-caption span {
+  color: #fff;
+  font-family: Arial;
+  display: block;
+  font-size: .85em;
+  padding: 10px;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+body {
+  font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+  font-size: 14px;
+}
+
+/* line 6, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* line 12, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 16, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-group {
+  margin: 40px 0 0;
+}
+/* line 18, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-group label {
+  font-weight: 600;
+  display: inline-block;
+}
+/* line 22, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-group p {
+  margin: 8px 0 0;
+  line-height: 1.5;
+}
+/* line 26, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-group .input-default {
+  width: 100%;
+  margin: 8px 0 0;
+}
+/* line 30, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-group .select-wrap {
+  margin: 8px 0 0;
+  position: relative;
+  background-color: #fff;
+}
+/* line 36, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-group select {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  background-position-x: 0px;
+  background-position-y: center;
+  -webkit-appearance: none;
+}
+/* line 52, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-group .fa-angle-down {
+  position: absolute;
+  right: 16px;
+  top: 25%;
+  z-index: 2;
+  color: #888;
+  transform: transrate(0, -50%);
+  display: inline-block;
+  pointer-events: none;
+}
+
+/* line 64, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.btn-red {
+  margin: 40px 0 0 0;
+  background-color: #ea352d;
+  border: 1p solid #ea352d;
+  color: #fff;
+  width: 100%;
+  line-height: 48px;
+  font-size: 14px;
+  transition: all ease-out .3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 77, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.form-arbitrary {
+  background-color: #ccc;
+  margin: 0 0 0 8px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+/* line 87, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.input-default {
+  height: 48px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  line-height: 1.5;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* line 98, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.mypage__contents__registration_user-info {
+  background-color: #fff;
+  text-align: left;
+}
+/* line 101, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.mypage__contents__registration_user-info .contents__head {
+  padding: 14px 4%;
+  border-bottom: 1px solid #f5f5f5;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 18px;
+  margin: 0;
+}
+/* line 109, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.mypage__contents__registration_user-info .registration__form {
+  border-top: 1px solid #f5f5f5;
+  padding: 64px;
+}
+/* line 112, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.mypage__contents__registration_user-info .registration__form p {
+  margin: 8px 0 0;
+  line-height: 1.5;
+}
+/* line 115, /Users/ryuzan/projects/kadai/app/assets/stylesheets/registration_user_info.scss */
+.mypage__contents__registration_user-info .registration__form p a {
+  color: #0099e8;
+  text-decoration: none;
+}
+
+/* line 1, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-delete-view.scss */
+.modal.is-animate {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* line 6, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-delete-view.scss */
+.modal.is-show {
+  display: block;
+}
+
+/* line 9, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-delete-view.scss */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out .3s;
+  opacity: 0;
+  -webkit-transform: translate(0, -10px);
+  transform: translate(0, -10px);
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* line 28, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-delete-view.scss */
+.modal-banner {
+  text-align: center;
+}
+
+/* line 32, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-delete-view.scss */
+.modal-inner {
+  position: relative;
+  overflow: hidden;
+  width: 95%;
+  max-width: 375px;
+  margin: 8px auto;
+  background: #fff;
+}
+
+/* line 42, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-delete-view.scss */
+.modal-body {
+  padding: 32px 2.5%;
+  line-height: 1.5;
+  z-index: 1;
+}
+
+/* line 48, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-delete-view.scss */
+.modal-head {
+  font-size: 16px;
+}
+
+/* line 52, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-delete-view.scss */
+.bold {
+  font-weight: 600;
+}
+
+/* line 56, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-delete-view.scss */
+.modal-btn-cancel {
+  float: left;
+}
+
+/* line 60, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-delete-view.scss */
+.modal-btn {
+  border-top: 1px solid #ccc;
+  width: 50%;
+  text-align: center;
+  line-height: 49px;
+}
+
+/* line 67, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-delete-view.scss */
+input {
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 75, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-delete-view.scss */
+.modal-btn-submit {
+  float: right;
+  border-left: 1px solid #ccc;
+  color: #0099e8;
+}
+
+/* line 81, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-delete-view.scss */
+button, [type="button"], [type="date"], [type="datetime"], [type="datetime-local"], [type="email"], [type="month"], [type="number"], [type="password"], [type="reset"], [type="search"], [type="submit"], [type="tel"], [type="text"], [type="time"], [type="url"], [type="week"], select, textarea {
+  min-height: 1.5em;
+}
+
+/* line 84, /Users/ryuzan/projects/kadai/app/assets/stylesheets/item-delete-view.scss */
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
