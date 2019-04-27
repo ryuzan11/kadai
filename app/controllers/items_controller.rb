@@ -39,6 +39,12 @@ before_action :set_item, only: [:edit, :update, :destroy,:confirm_buy, :pay, :co
     @item = Item.new unless @item
   end
 
+  def show
+    @item = Item.find(params[:id])
+    @images = Image.includes(:item)
+    @ownerItems = Item.where( "user_id = ?", @item.user_id ).limit(6)
+    @brandItems = Item.where( "brand_id = ?", @item.brand_id ).limit(6)
+  end
 
   def update
     if @item.brand
@@ -52,7 +58,6 @@ before_action :set_item, only: [:edit, :update, :destroy,:confirm_buy, :pay, :co
       render action: :edit
     end
   end
-
 
   def destroy
     item = Item.find(params[:id])
@@ -92,12 +97,6 @@ before_action :set_item, only: [:edit, :update, :destroy,:confirm_buy, :pay, :co
   rescue => e
     redirect_to item_path(@item), alert: '購入に失敗しました。'
   end
-
-
-
-
-
-
 
   private
 
