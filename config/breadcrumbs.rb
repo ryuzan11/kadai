@@ -27,6 +27,11 @@ crumb :delete_users do |user|
   parent :mypage_users
 end
 
+crumb :lists_items do |item|
+  link '出品した商品 - 出品中', item
+  parent :mypage_users
+end
+
 crumb :check_items do |item|
   link '出品商品画面', item
   parent :mypage_users
