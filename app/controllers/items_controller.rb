@@ -77,6 +77,11 @@ before_action :set_item, only: [:edit, :update, :destroy,:confirm_buy, :pay, :co
     @item = Item.find(params[:id])
   end
 
+  def lists
+    @item = Item.find(params[:id])
+    @images = Image.includes(:item)
+  end
+
   def pay
     ActiveRecord::Base.transaction do
       if @item.status === "1"
