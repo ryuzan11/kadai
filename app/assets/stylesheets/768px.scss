@@ -37,9 +37,6 @@
   .l-single-inner {
     padding: 64px;
   }
-}
-
-@media screen and (min-width: 768px){
   .l-chapter-head {
   font-size: 24px;
   padding: 8px 24px;
@@ -58,5 +55,8 @@
       margin: 8px 0 0;
       font-size: 54px;
     }
+  }
+  .mypage-tab-head {
+    padding: 0 16px;
   }
 }
