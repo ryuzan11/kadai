@@ -1,5 +1,5 @@
 crumb :root do
-  link "Home", root_path
+  link "ホーム", root_path
 end
 
 crumb :show_items do |item|
@@ -7,14 +7,39 @@ crumb :show_items do |item|
   parent :root
 end
 
-crumb :show_users do |user|
-  link 'ユーザーページ', users_profile_path
+crumb :register_users do |user|
+  link '本人情報', users_profile_path
+  parent :root
+end
+
+crumb :profile_users do |user|
+  link 'プロフィール', users_profile_path
+  parent :root
+end
+
+crumb :mypage_users do |user|
+  link 'マイページ', user_path(:id)
   parent :root
 end
 
 crumb :delete_users do |user|
   link 'ログアウト', user
-  parent :show_users
+  parent :mypage_users
+end
+
+crumb :lists_items do |item|
+  link '出品した商品 - 出品中', item
+  parent :mypage_users
+end
+
+crumb :check_items do |item|
+  link '出品商品画面', item
+  parent :mypage_users
+end
+
+crumb :new_creditcard do |user|
+  link 'クレジットカード情報入力', user
+  parent :mypage_users
 end
 
 # crumb :projects do
