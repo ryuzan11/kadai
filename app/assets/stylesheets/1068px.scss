@@ -1,4 +1,4 @@
-@media screen and (max-width: 1068px){
+@media screen and (min-width: 1068px) {
   .global-footer nav {
     width: 1020px;
   }
@@ -9,7 +9,6 @@
   }
   .l-content {
     float: right;
-    width: 700px;
   }
   .l-side {
     float: left;
