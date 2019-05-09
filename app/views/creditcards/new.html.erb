@@ -1,3 +1,6 @@
+<%= render partial: "/items/header" %>
+<%- breadcrumb :new_creditcard %>
+<%= breadcrumbs pretext: " ", separator: " #{content_tag(:i, '', :class=>'fa fa-caret-right')} ", style: :ul %>
 <%= render partial: "creditcard" %>
 <%= render partial: "items/footer" %>
 <%= render partial: "items/footer-sell-btn" %>
