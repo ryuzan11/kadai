@@ -18,7 +18,7 @@ crumb :profile_users do |user|
 end
 
 crumb :mypage_users do |user|
-  link 'マイページ', users_profile_path
+  link 'マイページ', user_path(:id)
   parent :root
 end
 
@@ -29,6 +29,11 @@ end
 
 crumb :check_items do |item|
   link '出品商品画面', item
+  parent :mypage_users
+end
+
+crumb :new_creditcard do |user|
+  link 'クレジットカード情報入力', user
   parent :mypage_users
 end
 
