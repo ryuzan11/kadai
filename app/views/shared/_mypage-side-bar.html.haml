@@ -2,7 +2,7 @@
   %nav.mypage__side-bar__list
     %ul.mypage__menu
       %li
-        %a.mypage__menu__list-item{href: "/users/<%= current_user.id %>"}
+        %a.mypage__menu__list-item{href: "/users/#{current_user.id}"}
           マイページ
           %i.fas.fa-angle-right
       %li
@@ -22,7 +22,7 @@
           出品する
           %i.fas.fa-angle-right
       %li
-        %a.mypage__menu__list-item{href: "/users/lists"}
+        %a.mypage__menu__list-item{href: "/users/#{current_user.id}/lists"}
           出品した商品 - 出品中
           %i.fas.fa-angle-right
       %li

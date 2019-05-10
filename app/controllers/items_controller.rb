@@ -62,7 +62,7 @@ before_action :set_item, only: [:edit, :update, :destroy,:confirm_buy, :pay, :co
   def destroy
     item = Item.find(params[:id])
     item.destroy
-    redirect_to "/users/profile"
+    redirect_to "/users/#{current_user.id}/lists"
   end
 
   def complete_buy
