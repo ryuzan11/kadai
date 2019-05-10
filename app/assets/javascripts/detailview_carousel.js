@@ -1,4 +1,4 @@
-$(function(){
+$(document).on('turbolinks:load', function(){
   /* ロードイベント */
   //パネルの幅
  var carouselWidth = 300;
