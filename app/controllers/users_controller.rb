@@ -15,4 +15,8 @@ class UsersController < ApplicationController
   def profile
   end
 
+  def lists
+    @items = Item.where(user_id: current_user.id)
+  end
+
 end
