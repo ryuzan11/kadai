@@ -28,23 +28,17 @@
 
           <div class="tab-content">
             <ul id="mypage-tab-transaction-now" class="mypage-item-list tab-pane active">
-              <li>
-                <a href="/items/1/check" class="my-item-link">
-                  <figure>
-                    画像
-                  </figure>
-                  <div class="mypage-item-body show-stock-item">
-                    <div class="mypage-item-text">
-                      アイテム名
-                    </div>
-                    <div>
-                      <div class="mypage-item-status bold awaiting">
-                        出品中
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
+              <% if @items.present? %>
+              <% @items.each do |item| %>
+                <%= render partial: "mypages/item_box", locals: {item:item} %>
+              <% end %>
+              <% else %>
+              <div class="my-item-link">
+                <div class="mypage-item-body show-stock-item">
+                  出品中の商品がありません
+                </div>
+              </div>
+              <% end %>
             </ul>
           </div>
 

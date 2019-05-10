@@ -16,27 +16,19 @@
           <div id="carousel-panel">
             <div id="carousel-wrapper">
               <div id="carousel-inner">
+                <% @images.each do |carousel| %>
                 <ul class="carousel-column">
-                  <li><%=image_tag("watch.png", class: "photo_main") %></li>
+                  <li><%= image_tag carousel.image, class: "photo_main" %></li>
                 </ul>
-                <ul class="carousel-column">
-                  <li><%=image_tag("adidas-detail1.png", class: "photo_main") %></li>
-                </ul>
-                <ul class="carousel-column">
-                  <li><%= image_tag("adidas-detail2.png", class: "photo_main") %></li>
-                </ul>
-                <ul class="carousel-column">
-                  <li><%= image_tag("adidas-detail3.png", class: "photo_main") %></li>
-                </ul>
+                <% end %>
               </div>
             </div>
             <div id="carousel-indicator">
+              <% @images.each do |carousel| %>
               <ul>
-                <li><%= image_tag("adidas-detail1.png", class: "active") %></li>
-                <li><%= image_tag("adidas-detail2.png") %></li>
-                <li><%= image_tag("adidas-detail3.png") %></li>
-                <li><%= image_tag("watch.png") %></li>
+                <li><%= image_tag carousel.image %></li>
               </ul>
+              <% end %>
             </div>
           </div>
         </div>
@@ -107,9 +99,6 @@
         </div>
       </div>
       <div class="items_item-detail_main-text">
-        <p>サイズが合わなくて、なくなく出品しました。<br>
-           私は、3キロ試し履きしただけです。
-        </p>
       </div>
     </section>
 
