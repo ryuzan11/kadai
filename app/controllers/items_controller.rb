@@ -29,7 +29,7 @@ before_action :set_item, only: [:edit, :update, :destroy,:confirm_buy, :pay, :co
     end
 
     if @item.save
-      redirect_to root_path
+      redirect_to "/users/lists"
     else
       render action: :new
     end
@@ -75,11 +75,9 @@ before_action :set_item, only: [:edit, :update, :destroy,:confirm_buy, :pay, :co
 
   def check
     @item = Item.find(params[:id])
-  end
-
-  def lists
-    @item = Item.find(params[:id])
-    @images = Image.includes(:item)
+    @images = @item.images
+    @ownerItems = Item.where( "user_id = ?", @item.user_id ).limit(6)
+    @brandItems = Item.where( "brand_id = ?", @item.brand_id ).limit(6)
   end
 
   def pay
