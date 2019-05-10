@@ -1,6 +1,6 @@
 // お知らせタブのJS
 
-jQuery(function($){
+$(document).on('turbolinks:load', function(){
   $('.upper-tab-content > ul').hide();
 
   $('.upper-tab a').click(function () {
@@ -15,7 +15,7 @@ jQuery(function($){
 
 
 // 取引タブのJS
-jQuery(function($){
+$(document).on('turbolinks:load', function(){
   $('.lower-tab-content > ul').hide();
 
   $('.lower-tab a').click(function () {
