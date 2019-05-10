@@ -18,7 +18,7 @@ crumb :profile_users do |user|
 end
 
 crumb :mypage_users do |user|
-  link 'マイページ', user_path(:id)
+  link 'マイページ', "/users/#{current_user.id}"
   parent :root
 end
 

@@ -29,7 +29,7 @@ before_action :set_item, only: [:edit, :update, :destroy,:confirm_buy, :pay, :co
     end
 
     if @item.save
-      redirect_to "/users/lists"
+      redirect_to "/users/#{current_user.id}/lists"
     else
       render action: :new
     end
