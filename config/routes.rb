@@ -29,11 +29,11 @@ Rails.application.routes.draw do
   get 'creditcards/new', to: 'creditcards#new'
 
   # user関連
-  get 'users/register', to: 'users#register'
-  get 'users/profile', to: 'users#profile'
+  get 'users/:id/register', to: 'users#register'
+  get 'users/:id/profile', to: 'users#profile'
   get 'users/:id/lists', to: 'users#lists'
   get 'users/logout', to: 'users#logout'
-  resources :users, only: [:show, :edit]
+  resources :users, only: [:show, :edit, :update]
 
   resources :creditcard, only: [:new]
 

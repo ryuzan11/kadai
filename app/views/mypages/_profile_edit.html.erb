@@ -1,24 +1,24 @@
-
   <div class="mypage clearfix">
     <section class="mypage__contents " >
       <div class="mypage__contents__profile-edit">
         <h2 class="proflie-edit__top">プロフィール</h2>
-        <form class="profile-edit__submit" action="https://www.mercari.com/jp/mypage/profile/" method="POST" >
+        <% @user.each do |user| %>
+        <%= form_tag("/users/#{user.id}", class: "profile-edit__submit", method: :patch) do %>
           <input type="hidden" name="">
           <div class="profile-edit__submit__icon">
             <figure>
               <%= image_tag "user_no_image_icon.png" %>
             </figure>
-            <input type="text" value="current_user" name="nick_name" placeholder="例）AYA☆セール実施中" class="profile__input-name">
+            <input type="text" value="<%= user.nickname %>" name="nick_name" placeholder="例）AYA☆セール実施中" class="profile__input-name" >
           </div>
           <div class="profile-edit__submit__content">
             <textarea name="introduction" placeholder="例）こんにちは☆ ご覧いただきありがとうございます！かわいいものやきれいめオフィスカジュアル中心に出品しています。服のサイズは主に9号です。気持ちよくお取引できるよう心がけていますので、商品や発送方法などご質問がありましたらお気軽にどうぞ♪" class="profile-edit__submit__content__textarea"></textarea>
             <input type="hidden" value="https://www.mercari.com/jp/mypage/profile/" name="after_save_callback">
-            <button type="submit" class="btn_red">変更する</button>
+<!--             <button type="submit" class="btn_red">変更する</button> -->
           </div>
-        </form>
-
-
+        <% end %>
+        <% end %>
+      </div>
     </section>
 
 <!-- サイドバー

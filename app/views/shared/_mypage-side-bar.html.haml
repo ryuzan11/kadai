@@ -76,7 +76,7 @@
       設定
     %ul.mypage__menu
       %li
-        %a.mypage__menu__list-item{href: "/users/profile"}
+        %a.mypage__menu__list-item{href: "/users/#{current_user.id}/profile"}
           プロフィール
           %i.fas.fa-angle-right
       %li
@@ -92,7 +92,7 @@
           メール・パスワード
           %i.fas.fa-angle-right
       %li
-        %a.mypage__menu__list-item{href: "/users/register"}
+        %a.mypage__menu__list-item{href: "/users/#{current_user.id}/register"}
           本人情報
           %i.fas.fa-angle-right
       %li

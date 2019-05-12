@@ -8,12 +8,12 @@ crumb :show_items do |item|
 end
 
 crumb :register_users do |user|
-  link '本人情報', users_profile_path
+  link '本人情報', "/users/#{current_user.id}/register"
   parent :root
 end
 
 crumb :profile_users do |user|
-  link 'プロフィール', users_profile_path
+  link 'プロフィール', "/users/#{current_user.id}/profile"
   parent :root
 end
 

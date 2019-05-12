@@ -4,7 +4,8 @@
         <h2 class="contents__head">
           本人情報の登録
         </h2>
-        <form action="https://www.mercari.com/jp/mypage/identification/save/" method="POST" accept-charset="utf-8" class="registration__form">
+        <% @user.each do |user| %>
+        <form action="users/#{user.id}/register" method="POST" accept-charset="utf-8" class="registration__form">
           <div>
             <p>お客様の本人情報をご登録ください。<br>
             登録されたお名前・生年月日を変更する場合、本人確認書類の提出が必要になります。</p>
@@ -17,11 +18,11 @@
 
           <div class="form-group">
             <label>お名前</label>
-            <p>渡辺 田中</p>
+            <p><%= user.second_name %><%= user.first_name %></p>
           </div>
           <div class="form-group">
             <label>お名前カナ</label>
-            <p>ワタナベ タナカ</p>
+            <p><%= user.second_name_kana %><%= user.first_name_kana %></p>
           </div>
           <div class="form-group">
             <label for="birthday">生年月日</label>
@@ -106,17 +107,18 @@
             <input type="text" name="building-name" placeholder="例)柳ビル103" class="input-default" >
           </div>
 
-          <button type="submit" class="btn-red">登録する</button>
+<!--           <button type="submit" class="btn-red">登録する</button>
           <div class="form-group text-right">
             <p>
               <a href="/jp/help_center/article/423/" target="_blank">
                 本人情報の登録について<i class="fas fa-angle-right"></i>
               </a>
             </p>
-          </div>
+          </div> -->
 
           <input type="hidden" name="">
         </form>
+        <% end %>
 
     </section>
 
