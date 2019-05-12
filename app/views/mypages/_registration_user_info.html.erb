@@ -4,7 +4,7 @@
         <h2 class="contents__head">
           本人情報の登録
         </h2>
-        <% @user.each do |user| %>
+        <% @user.first(1).each do |user| %>
         <form action="users/#{user.id}/register" method="POST" accept-charset="utf-8" class="registration__form">
           <div>
             <p>お客様の本人情報をご登録ください。<br>
