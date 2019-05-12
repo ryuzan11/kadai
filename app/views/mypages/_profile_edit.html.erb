@@ -2,7 +2,7 @@
     <section class="mypage__contents " >
       <div class="mypage__contents__profile-edit">
         <h2 class="proflie-edit__top">プロフィール</h2>
-        <% @user.first(1).each do |user| %>
+        <% @user.each do |user| %>
         <%= form_tag("/users/#{user.id}", class: "profile-edit__submit", method: :patch) do %>
           <input type="hidden" name="">
           <div class="profile-edit__submit__icon">

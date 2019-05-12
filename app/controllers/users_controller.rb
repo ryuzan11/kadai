@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-before_action :set_user, only: [:profile, :register, :update]
+# before_action :set_user, only: [:profile, :register, :update]
 
   def show
   end
@@ -17,9 +17,11 @@ before_action :set_user, only: [:profile, :register, :update]
   end
 
   def register
+    @user = User.where(id: current_user.id)
   end
 
   def profile
+    @user = User.where(id: current_user.id)
   end
 
   def lists
@@ -28,9 +30,9 @@ before_action :set_user, only: [:profile, :register, :update]
 
   private
 
-  def set_user
-    @user = User.where(params[:id])
-  end
+  # def set_user
+  #   @user = User.where(params[:id])
+  # end
 
   # def user_params
   #   params.permit(:nickname)
